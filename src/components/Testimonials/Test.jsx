@@ -1,6 +1,8 @@
 import React from 'react'
 import './Test.css'
-function Test() {
+
+
+const Test = () => {
   return (
     <div>Test</div>
   )

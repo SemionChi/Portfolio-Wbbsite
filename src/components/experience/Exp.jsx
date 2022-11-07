@@ -1,6 +1,7 @@
 import React from 'react'
 import './Exp.css'
-function Exp() {
+
+const Exp = () => {
   return (
     <div>Exp</div>
   )

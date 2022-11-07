@@ -1,6 +1,8 @@
 import React from 'react'
 import './Port.css'
-function Port() {
+
+
+const Port = () => {
   return (
     <div>Port</div>
   )
