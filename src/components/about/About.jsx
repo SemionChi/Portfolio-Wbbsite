@@ -1,10 +1,51 @@
 import React from 'react'
-import './About.css'
-
+import './about.css'
+import ME from '../../assests/me-about.jpg'
+import {FaAward} from 'react-icons/fa'
+import {VscFolderLibrary} from 'react-icons/vsc'
 
 const About = () => {
   return (
-    <div>About</div>
+    <section id='about'>
+      <h5>Get To Know</h5>
+      <h2>About me</h2>
+      
+      <div className="container about__container">
+      <div className="about__me">
+        <div className="about__me-image">
+          <img src={ME} alt="About Image" />
+        </div>
+      </div>
+
+
+      <div className="about__content">
+        <div className="about__cards">
+          <article className="about__card">
+            <FaAward className='about__icon'/>
+            <h2>Experience</h2>
+            <small>0.5 Years Experience</small>
+
+          </article>
+          
+          
+
+          <article className="about__card">
+            <VscFolderLibrary className='about__icon'/>
+            <h2>Projects</h2>
+            <small>1+ Completed</small>
+
+          </article>
+        </div>
+
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#contacts" className='btn btn-primary'>Let`s Talk</a>
+
+      </div>
+      </div>
+      
+    </section>
   )
 }
 
