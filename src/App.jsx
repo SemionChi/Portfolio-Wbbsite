@@ -7,7 +7,7 @@ import Header from './components/header/Header'
 
 import Nav from './components/nav/Nav'
 import Port from './components/portfolio/Port'
-import Services from './components/Services/Services'
+import Services from './components/services/Services'
 import Test from './components/Testimonials/Test'
 const App = () => {
   return (
@@ -16,8 +16,8 @@ const App = () => {
     <Nav/>
     <About/>
     <Exp/>
-    <Services/>
     <Port/>
+    <Services/>
     <Test/>
     <Contacts/>
     <Footer/>
