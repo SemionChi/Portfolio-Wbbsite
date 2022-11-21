@@ -1,7 +1,11 @@
 .experience__container{
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 0.2fr;
+    grid-gap: 10px;
+    gap:5rem;
 }
 
 
@@ -18,15 +22,19 @@
     cursor: default;
 }
 
-.experience__container > div h2{
+.experience__container > div h3{
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-primary);
 }
 .experience__content{
+    
+    
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 0.2fr;
+    grid-gap: 10px;
+    gap:1rem;
 }
 
 .experience__details{
@@ -38,32 +46,4 @@
     color: var(--color-primary);
 }
 
-/* ========== MEDIA QUERIES MEDIUM ========== */
-
-@media screen and(max-width:1024px){
-    .experience__container{
-        grid-template-columns: 1fr;
-    }
-    .experience__container > div{
-        width:80%;
-        padding:2rem;
-        margin: 0 auto;
-    }
-
-    .experience__content{
-        padding: 1rem;
-    }
-}
-
 /* ========== MEDIA QUERIES SMALL ========== */
-
-@media screen and(max-width:600px){
-    .experience__container{
-        gap: 1rem;
-    }
-    .experience__container > div {
-        width: 100%;
-        padding: 2rem 1rem;
-    }
-    
-}

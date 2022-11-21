@@ -14,8 +14,9 @@ const Nav = () => {
       <a href="#" onClick={() => setActiveNav('#')}  className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
       <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}  ><AiOutlineUser/></a>
       <a href="#exp" onClick={() => setActiveNav('#exp')} className={activeNav === '#exp' ? 'active' : ''}><ImDisplay/></a>
+            <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><AiOutlineContacts/></a>
+
       <a href="#port" onClick={() => setActiveNav('#port')} className={activeNav === '#port' ? 'active' : ''}><AiOutlineBook/></a>
-      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><AiOutlineContacts/></a>
     </nav>
   )
 }

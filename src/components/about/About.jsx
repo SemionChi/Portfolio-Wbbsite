@@ -1,10 +1,14 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assests/me-about.jpg'
+import ME from '../../assets/me-about.jpg'
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import {BsLinkedin} from 'react-icons/bs'
+import {BsGithub} from 'react-icons/bs'
+import { useState } from 'react'
 
 const About = () => {
+  const[activeTalk,setActiveTalk]=useState('#')
   return (
     <section id='about'>
       <h5>Get To Know</h5>
@@ -38,12 +42,36 @@ const About = () => {
         </div>
 
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Starting as a fresh graduate never has been as difficult as it is right now, knowing this, I knew I`m going to be required to do extra effort to prove my capabilities, I had to stay consistent and code everyday while working full time in construction, so as warren buffet said, "Buy the dip", i know that these hard times will produce the most capable and dedicated engineers.
         </p>
-        <a href="#contacts" className='btn btn-primary'>Let`s Talk</a>
+        <div className="menu">
+          <div className='toggle'>Lets talk</div>
+
+            <li >
+            <a href="https://www.linkedin.com/in/semiont/" onClick={() => setActiveTalk('#')} className={activeTalk === '#' ? 'active' : ''} target="_blank"><BsLinkedin/></a>
+    
+            </li>
+
+            <li >
+            <a href="https://github.com/SemionChi" target="_blank"><BsGithub/></a>
+            </li>
+            
+
+          
+
+
+        </div>
+
+    
+        
+
+        </div>
+        
+        
+        
 
       </div>
-      </div>
+      
       
     </section>
   )
