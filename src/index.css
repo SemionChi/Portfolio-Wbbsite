@@ -29,6 +29,7 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -41,10 +42,9 @@ body{
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/bg-texture.png);
-
-}
-
-
+    
+    
+}   
 /* ========== general styles ========== */
 
 .container{

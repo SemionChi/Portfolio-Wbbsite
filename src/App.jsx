@@ -6,7 +6,7 @@ import Header from './components/header/Header'
 
 import Nav from './components/nav/Nav'
 import Port from './components/portfolio/Port'
-import Services from './components/services/Services'
+
 
 const App = () => {
   <head>
@@ -21,7 +21,7 @@ const App = () => {
     <Nav/>
     <About/>
     <Exp/>
-    <Services/>
+    
     <Port/>
     
     
